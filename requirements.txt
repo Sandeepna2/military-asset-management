@@ -1,0 +1,9 @@
+flask
+flask-sqlalchemy
+flask-cors
+flask-jwt-extended
+marshmallow-sqlalchemy
+flask-marshmallow
+psycopg2-binary
+gunicorn
+werkzeug
