@@ -1,8 +1,16 @@
-# Military Asset Management System (MAMS)
+# 🛡️ Military Asset Management System (MAMS)
+  
+A **secure, role-based full-stack web application** designed to manage, track, and audit military assets across multiple bases with full transparency and accountability.
+ 
+---
+       
+## 🌐 Live Deployment
 
-Review and manage military assets, transfers, and personnel assignments with a robust, clear, and secure platform.
+- **Frontend (Web App)**: [https://military-asset-management-three.vercel.app](https://military-asset-management-three.vercel.app)  
+- **Backend (REST API)**: [https://mams-backend-oq0b.onrender.com](https://mams-backend-oq0b.onrender.com)  
 
-![MAMS Dashboard](https://placehold.co/800x400?text=MAMS+Dashboard+Preview)
+> ⚠️ Note: The backend is hosted on a free-tier Render service. The first request may take a few seconds due to cold start.
+ 
 
 ## 📋 Project Overview
 
@@ -28,9 +36,8 @@ The **Military Asset Management System (MAMS)** is a web-based application desig
 
 ### Backend
 - **Framework**: Flask (Python)
-- **ORM**: SQLAlchemy
 - **Auth**: Flask-JWT-Extended
-- **Database**: SQLite (Dev) / PostgreSQL (Prod)
+- **Database**: SQL(SQLite) 
 
 ---
 
@@ -71,25 +78,6 @@ npm install
 npm run dev
 ```
 Client will start at `http://localhost:5173`.
-
----
-
-## 🌐 Deployment
-
-### Backend (Render)
-1. Push code to GitHub.
-2. Create a **Web Service** on Render.
-3. Connect your repository.
-4. **Build Command**: `pip install -r requirements.txt`
-5. **Start Command**: `gunicorn backend.app:create_app()`
-6. Add Environment Variable: `Current Directory` set to `.`
-
-### Frontend (Netlify/Vercel)
-1. Push code to GitHub.
-2. Create a new site from Git.
-3. **Build Command**: `npm run build`
-4. **Publish Directory**: `frontend/dist`
-5. Add Environment Variable: `VITE_API_URL` -> URL of your Render backend.
 
 ---
 
